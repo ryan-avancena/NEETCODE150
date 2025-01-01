@@ -2,7 +2,8 @@
 
 Initial Solution: Intuition was there but time complexity was not good :(
 
-Other
+1. Create tuple with all 26 letters, where index corresponds to count of a specific letter ~ ORRRR ~ 
+2. Sort the string instead of the dictionary.
 
 """
 
@@ -30,6 +31,13 @@ class Solution(object):
                 words[letter_tuple].append(str)
 
         return words.values()
+    
+    # def betterGroupAnagrams(self, strs):
+    #     """
+    #     :type strs: List[str]
+    #     :rtype: List[List[str]]
+    #     """
+       
 
 if __name__ == '__main__':
     solution = Solution()
